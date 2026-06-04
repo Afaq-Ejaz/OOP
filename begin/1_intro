@@ -1,0 +1,30 @@
+class Dog:
+    def __init__(self, name , breed, owner):
+        self.name = name
+        self.breed = breed
+        self.owner = owner
+        
+    def bark(self):
+        print(f"Whoof , Whoof , my name is {self.name} & my owner is {self.owner.name}")
+
+class Owner:
+    def __init__(self, name , number , pta):
+        self.name = name
+        self.adres = pta
+        self.number = number
+    
+    def check(self):
+        print("This is clearity")
+    
+    def update_number(self, new_num):
+        self.number = new_num
+
+        
+
+owner1 = Owner("Kurt" , "923923" , "Lahore")
+dog1 = Dog("Husk "," G.S" , owner1)
+
+print(dog1.owner.number)
+print(owner1.number)
+print(dog1.owner.update_number("04312"))
+print(owner1.number)
